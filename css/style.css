@@ -1,0 +1,81 @@
+
+  .pln { color: #000 }
+
+@media screen {
+  .str { color: #080 }
+  .kwd { color: #008 }  /* a keyword */
+  .com { color: #800 }  /* a comment */
+  .typ { color: #606 }  /* a type name */
+  .lit { color: #066 }  /* a literal value */
+  /* punctuation, lisp open bracket, lisp close bracket */
+  .pun, .opn, .clo { color: #660 }
+  .tag { color: #008 }  /* a markup tag name */
+  .atn { color: #606 }  /* a markup attribute name */
+  .atv { color: #080 }  /* a markup attribute value */
+  .dec, .var { color: #606 }  /* a declaration; a variable name */
+  .fun { color: red }  /* a function name */
+}
+
+/* Use higher contrast and text-weight for printable form. */
+@media print, projection {
+  .str { color: #060 }
+  .kwd { color: #006; font-weight: bold }
+  .com { color: #600; font-style: italic }
+  .typ { color: #404; font-weight: bold }
+  .lit { color: #044 }
+  .pun, .opn, .clo { color: #440 }
+  .tag { color: #006; font-weight: bold }
+  .atn { color: #404 }
+  .atv { color: #060 }
+}
+
+/* Put a border around prettyprinted code snippets. */
+pre.prettyprint {
+  padding: 5px;
+  border: 1px solid #888;
+  font-size: 13.5px;
+  overflow-x: auto;
+  background:red;
+}
+
+/* Specify class=linenums on a pre to get line numbering */
+ol.linenums { margin-top: 0; margin-bottom: 0 } /* IE indents via margin-left */
+li.L0,li.L1,li.L2,li.L3,li.L5,li.L6,li.L7,li.L8 { list-style-type: none }
+/* Alternate shading for lines */
+li.L1,li.L3,li.L5,li.L7,li.L9 { background: #eee }
+
+/* desert scheme ported from vim to google prettify */
+pre.prettyprint { display: block; background-color: #333 }
+pre .nocode { background-color: none; color: #000 }
+pre .str { color: #ffa0a0 } /* string  - pink */
+pre .kwd { color: #f0e68c; font-weight: bold }
+pre .com { color: #87ceeb } /* comment - skyblue */
+pre .typ { color: #98fb98 } /* type    - lightgreen */
+pre .lit { color: #cd5c5c } /* literal - darkred */
+pre .pun { color: #fff }    /* punctuation */
+pre .pln { color: #fff }    /* plaintext */
+pre .tag { color: #f0e68c; font-weight: bold } /* html/xml tag    - lightyellow */
+pre .atn { color: #bdb76b; font-weight: bold } /* attribute name  - khaki */
+pre .atv { color: #ffa0a0 } /* attribute value - pink */
+pre .dec { color: #98fb98 } /* decimal         - lightgreen */
+
+/* Specify class=linenums on a pre to get line numbering */
+ol.linenums { margin-top: 0; margin-bottom: 0; color: #AEAEAE } /* IE indents via margin-left */
+li.L0,li.L1,li.L2,li.L3,li.L5,li.L6,li.L7,li.L8 { list-style-type: none }
+/* Alternate shading for lines */
+li.L1,li.L3,li.L5,li.L7,li.L9 { }
+
+@media print {
+  pre.prettyprint { background-color: none }
+  pre .str, code .str { color: #060 }
+  pre .kwd, code .kwd { color: #006; font-weight: bold }
+  pre .com, code .com { color: #600; font-style: italic }
+  pre .typ, code .typ { color: #404; font-weight: bold }
+  pre .lit, code .lit { color: #044 }
+  pre .pun, code .pun { color: #440 }
+  pre .pln, code .pln { color: #000 }
+  pre .tag, code .tag { color: #006; font-weight: bold }
+  pre .atn, code .atn { color: #404 }
+  pre .atv, code .atv { color: #060 }
+}
+@font-face{font-family:base_font_2;src:url("../fonts/bebas-neue/bebasneue_regular-webfont.eot");src:url("../fonts/bebas-neue/bebasneue_regular-webfont.eot?#iefix") format('embedded-opentype'),url("../fonts/bebas-neue/bebasneue_regular-webfont.woff2") format('woff2'),url("../fonts/bebas-neue/bebasneue_regular-webfont.woff") format('woff'),url("../fonts/bebas-neue/bebasneue_regular-webfont.ttf") format('truetype'),url("../fonts/bebas-neue/bebasneue_regular-webfont.svg#bebas_neue_regularregular") format('svg');font-weight:normal;font-style:normal}@font-face{font-family:base_font_2;src:url("../fonts/bebas-neue/bebasneue_bold-webfont.eot");src:url("../fonts/bebas-neue/bebasneue_bold-webfont.eot?#iefix") format('embedded-opentype'),url("../fonts/bebas-neue/bebasneue_bold-webfont.woff2") format('woff2'),url("../fonts/bebas-neue/bebasneue_bold-webfont.woff") format('woff'),url("../fonts/bebas-neue/bebasneue_bold-webfont.ttf") format('truetype'),url("../fonts/bebas-neue/bebasneue_bold-webfont.svg#bebas_neuebold") format('svg');font-weight:bold;font-style:normal}body{font-family:'Lato',sans-serif,Arial;font-size:16px;color:color-black;text-rendering:optimizeLegibility;font-smoothing:antialiased;font-size:inherit;font-size:100%;-webkit-tap-highlight-color:rgba(0,0,0,0)}a{text-decoration:none}ul{padding:0}img{border:none;vertical-align:bottom;max-width:100%}button,a,input{outline:0}.Lecture{max-width:1065px;margin:0 auto;}.Lecture-content{padding:25px 45px;margin:0 auto;font-weight:300;line-height:30px;font-size:18px;margin:0 auto;word-break:break-word;}.Lecture-content h2,.Lecture-content h3,.Lecture-content h4,.Lecture-content h5,.Lecture-content h6{font-weight:bold;font-size:22px;color:#333;margin-bottom:10px}.Lecture-content strong{font-weight:600}.Lecture-content a{color:#058ecd;text-decoration:none;font-weight:600;border-bottom:1px solid celeste}.Lecture-content img{max-width:100%}
